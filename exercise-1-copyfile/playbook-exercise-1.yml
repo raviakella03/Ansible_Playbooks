@@ -1,0 +1,8 @@
+-
+  name: Copy files fo target servers
+  hosts: all
+  tasks:
+    - name: Copy files
+      copy:
+        src: /tmp/test_file.txt
+        dest: /tmp/test_file.txt

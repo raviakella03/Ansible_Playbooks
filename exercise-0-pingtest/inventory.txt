@@ -1,0 +1,11 @@
+#web Servers
+web1 ansible_host=ip-172-31-15-167.ap-south-1.compute.internal ansible_connection=ssh ansible_user=ansible
+
+#Database Servers
+db_ora1 ansible_host=ip-172-31-8-176.ap-south-1.compute.internal ansible_connection=ssh ansible_user=ansible
+
+[web_primary]
+web1
+
+[db_primary]
+db_ora1
